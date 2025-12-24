@@ -1,0 +1,114 @@
+\documentclass{cookbook}
+
+\begin{document}
+
+% --- Front Cover ---
+\begin{titlepage}
+    \setBackground{example-image}
+    \centering
+    \vspace*{4cm}
+    {\Huge\bfseries\color{TitleColor} My Digital Cookbook\par}
+    \vspace{1cm}
+    {\Large\itshape A collection of my favorite recipes\par}
+    \vfill
+    {\large \today\par}
+\end{titlepage}
+
+% --- Table of Contents ---
+\tableofcontents
+
+% --- Chapter: Appetizers ---
+% \setChapterImage{example-image-c}
+\chapterBg{Antipasti}{example-image-c}
+
+\recipeOnePage{Bruschetta Classica}
+    {Per 4 persone | 15 min}
+    {
+        \item Baguette, sliced
+        \item Tomatoes, diced
+        \item Fresh basil
+        \item Garlic
+        \item Olive oil
+    }
+    {A fresh and vibrant Italian appetizer that captures the essence of summer. Best made with ripe, juicy tomatoes.}
+    {
+        \item Toast the baguette slices until golden brown.
+        \item Rub the toasted bread with a clove of garlic.
+        \item Mix tomatoes, basil, and olive oil in a bowl.
+        \item Top the bread with the tomato mixture and serve immediately.
+    }
+    {For an extra kick, rub the toasted bread with a cut chili pepper alongside the garlic.}
+    {example-image}
+
+% --- Chapter: Secondi ---
+\chapterBg{Secondi Piatti}{example-image-b}
+
+\recipeTwoPages{Lasagna della Nonna}
+    {Per 8 persone | 2 ore}
+    {
+        \item Lasagna noodles
+        \item Ground beef (500g)
+        \item Tomato sauce (700ml)
+        \item Ricotta cheese
+        \item Mozzarella cheese
+        \item Parmesan cheese
+        \item Onion \& Garlic
+        \item Spices (Basil, Oregano)
+    }
+    {This rich and cheesy lasagna is a family heirloom recipe, perfect for Sunday dinners. It layers savory meat sauce with creamy cheeses for the ultimate comfort food.}
+    {
+        \item Cook the ground beef with onions and garlic until browned.
+        \item Add tomato sauce and simmer for 20 minutes.
+        \item Cook lasagna noodles according to package instructions.
+        \item Layer noodles, meat sauce, and cheeses in a baking dish.
+        \item Bake at 180\textdegree C for 45 minutes.
+        \item Let rest for 10 minutes before serving.
+    }
+    {Serve with a fresh green salad and garlic bread to cut through the richness.}
+    {example-image}
+
+% --- Chapter: Dolci ---
+\chapter{Dolci}
+
+\recipeTextOnly{Pancake Semplici}
+    {Per 4 persone | 20 min}
+    {
+        \item Flour (1 cup)
+        \item Milk (1 cup)
+        \item Egg (1)
+        \item Butter (melted)
+        \item Baking powder
+        \item Sugar (1 tbsp)
+        \item Pinch of salt
+    }
+    {Fluffy, golden pancakes that are incredibly easy to whip up. A breakfast staple that never disappoints.}
+    {
+        \item Whisk flour, sugar, baking powder, and salt.
+        \item In another bowl, mix milk, egg, and melted butter.
+        \item Combine wet and dry ingredients (do not overmix).
+        \item Cook on a hot griddle until bubbles form, then flip.
+        \item Serve warm with syrup.
+    }
+    {}
+
+\recipeBottomImage{Smoothie Bowl Tropicale}
+    {Per 1 persona}{10 min}
+    {
+        \item Frozen mango (1 cup)
+        \item Banana (1, frozen)
+        \item Coconut milk (1/2 cup)
+        \item Chia seeds
+        \item Granola
+        \item Fresh berries
+    }
+    {A refreshing and vibrant breakfast bowl that tastes like summer. Packed with vitamins and antioxidants.}
+    {
+        \item Blend mango, banana, and coconut milk until smooth.
+        \item Pour into a bowl.
+        \item Top with granola, chia seeds, and fresh berries.
+        \item Serve immediately with a spoon.
+    }
+    {Add a scoop of protein powder for a post-workout boost!}
+    {example-image-a}
+
+\end{document}
