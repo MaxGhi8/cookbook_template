@@ -105,6 +105,21 @@
   {\normalfont\sffamily\Large\bfseries\color{SectionColor}}
   {\thesection}{1em}{}
 
+% Command for Section with Background (Dedicated Page)
+% Usage: \sectionBg{Title}{BackgroundImage}
+\newcommand{\sectionBg}[2]{
+    \clearpage
+    \thispagestyle{empty}
+    \refstepcounter{section}
+    \addcontentsline{toc}{section}{\thesection\hspace{1em}#1}
+    \setBackground{#2}
+    \centering
+    \vspace*{6cm}
+    {\Huge\bfseries\color{SectionColor} \thesection. #1 \par}
+    \vfill
+    \clearpage
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Recipe commands
 % Suggestion: use this with \setBackground
