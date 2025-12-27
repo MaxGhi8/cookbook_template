@@ -14,7 +14,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{booktabs}
 \RequirePackage[hidelinks]{hyperref}
-\RequirePackage[italian]{babel}
+\RequirePackage[english]{babel}
 
 % Fonts (Standard reliable fonts)
 \RequirePackage{mathpazo} % Palatino font for a classic look
@@ -148,7 +148,7 @@
          \faIcon{clock}\ #2}
     \par\vspace{1cm}
     
-    \section*{Ingredienti \faIcon{shopping-cart}}
+    \section*{Ingredients \faIcon{shopping-cart}}
     \begin{multicols}{2}
         \begin{itemize}[noitemsep]
             #3
@@ -158,11 +158,11 @@
     % Description (Optional)
     \ifstrempty{#4}{}{
         \vspace{0.3cm}
-        {\noindent\bfseries\color{TextColor} \faIcon{pen}\ Descrizione:} #4
+        {\noindent\bfseries\color{TextColor} \faIcon{pen}\ Description:} #4
     }
     
     \vspace{0.5cm}
-    \section*{Preparazione \faIcon{utensils}}
+    \section*{Preparation \faIcon{utensils}}
     \begin{enumerate}
         #5
     \end{enumerate}
@@ -172,7 +172,7 @@
         \vfill
         \noindent
         {\color{SectionColor}\rule{\linewidth}{0.5pt}}\\[0.2cm]
-        {\bfseries\itshape\color{TitleColor} \faIcon{lightbulb}\ Il Consiglio dello Chef:} #6
+        {\bfseries\itshape\color{TitleColor} \faIcon{lightbulb}\ Chef's Tip:} #6
     }
 }
 
@@ -192,7 +192,7 @@
     % Top Half: Two Columns Layout
     \noindent
     \begin{minipage}[t]{0.55\textwidth}
-        \section*{Ingredienti \faIcon{shopping-cart}}
+        \section*{Ingredients \faIcon{shopping-cart}}
         \begin{itemize}[noitemsep, leftmargin=*]
             #3
         \end{itemize}
@@ -200,7 +200,7 @@
         % Description in left column
         \ifstrempty{#4}{}{
             \vspace{0.3cm}
-            {\noindent\bfseries\color{TextColor} \faIcon{pen}\ Descrizione:} #4
+            {\noindent\bfseries\color{TextColor} \faIcon{pen}\ Description:} #4
         }
     \end{minipage}%
     \hfill
@@ -226,7 +226,7 @@
     \vspace{0.5cm}
     
     % Bottom Half: Full Width Preparation
-    \section*{Preparazione \faIcon{utensils}}
+    \section*{Preparation \faIcon{utensils}}
     \begin{enumerate}
         #5
     \end{enumerate}
@@ -236,7 +236,7 @@
         \vfill
         \noindent
         {\color{SectionColor}\rule{\linewidth}{0.5pt}}\\[0.2cm]
-        {\bfseries\itshape\color{TitleColor} \faIcon{lightbulb}\ Il Consiglio dello Chef:} #6
+        {\bfseries\itshape\color{TitleColor} \faIcon{lightbulb}\ Chef's Tip:} #6
     }
     \par
 }
@@ -252,7 +252,7 @@
          \faIcon{clock}\ #2}
     \par\vspace{0.5cm}
     
-    \section*{Ingredienti \faIcon{shopping-cart}}
+    \section*{Ingredients \faIcon{shopping-cart}}
     \begin{multicols}{2}
         \begin{itemize}[noitemsep]
             #3
@@ -262,11 +262,11 @@
     % Description (Optional)
     \ifstrempty{#5}{}{
         \vspace{0.3cm}
-        {\noindent\bfseries\color{TextColor} \faIcon{pen}\ Descrizione:} #4
+        {\noindent\bfseries\color{TextColor} \faIcon{pen}\ Description:} #4
     }
     
     \vspace{0.5cm}
-    \section*{Preparazione \faIcon{utensils}}
+    \section*{Preparation \faIcon{utensils}}
     \begin{enumerate}
         #5
     \end{enumerate}
@@ -276,7 +276,7 @@
         \vspace{0.3cm}
         \noindent
         {\color{SectionColor}\rule{\linewidth}{1pt}}\\[0.2cm]
-        {\bfseries\itshape\color{TitleColor} \faIcon{lightbulb}\ Il Consiglio dello Chef:} #6
+        {\bfseries\itshape\color{TitleColor} \faIcon{lightbulb}\ Chef's Tip:} #6
     }
     \par
 
