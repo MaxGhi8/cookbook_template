@@ -110,3 +110,4 @@ The class defines three main colors you can customize in `cookbook.cls`:
 I select these fonts, but they can be easily changed in the `cookbook.cls` file.
 - Palatino (serif) for body text 
 - Helvetica (sans-serif) for headers.
+- Zapf Chancery (serif) for the titles, chapters and sections.

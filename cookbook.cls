@@ -41,6 +41,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Background commands
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Command to set background for the CURRENT page only
 \newcommand{\setBackground}[1]{
     \AddToShipoutPictureBG*{
@@ -66,6 +67,9 @@
     \null
     \clearpage
 }
+
+% Font command for elegant cursive titles
+\newcommand{\scriptFont}{\fontfamily{pzc}\selectfont}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter commands
@@ -93,7 +97,7 @@
 
 % Title Formatting
 \titleformat{\chapter}[display]
-  {\centering\normalfont\sffamily}
+  {\centering\normalfont\scriptFont}
   {\thispagestyle{empty}\vspace*{2cm}\Huge\bfseries\color{TitleColor}\chaptertitlename\ \thechapter}
   {20pt}
   {\titlerule[2pt]\vspace{1ex}\Huge\bfseries\color{SectionColor}}
@@ -102,7 +106,7 @@
 \titlespacing*{\chapter}{0pt}{0pt}{40pt}
 
 \titleformat{\section}
-  {\normalfont\sffamily\Large\bfseries\color{SectionColor}}
+  {\normalfont\scriptFont\Large\bfseries\color{SectionColor}}
   {\thesection}{1em}{}
 
 % Command for Section with Background (Dedicated Page)
@@ -115,7 +119,7 @@
     \setBackground{#2}
     \centering
     \vspace*{6cm}
-    {\Huge\bfseries\color{SectionColor} \thesection. #1 \par}
+    {\Huge\scriptFont\bfseries\color{SectionColor} \thesection. #1 \par}
     \vfill
     \clearpage
 }
@@ -133,7 +137,7 @@
         \raggedright % No justification
         \hyphenpenalty=10000 % No hyphenation
         \exhyphenpenalty=10000 % No explicit hyphenation
-        \sffamily\Huge\bfseries\color{TitleColor} #1%
+        \scriptFont\Huge\bfseries\color{TitleColor} #1%
     \end{minipage}%
     \par\vspace{0.5cm}%
 }
