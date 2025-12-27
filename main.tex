@@ -17,9 +17,27 @@
 % --- Table of Contents ---
 \tableofcontents
 
+% --- Introduction ---
+\clearpage
+\thispagestyle{plain}
+\section*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+
+Welcome to my \textbf{LaTeX Cookbook Template}.
+\\[0.5cm]
+The idea for this project was born out of a simple need: I wanted to create a beautiful, structured, and print-ready cookbook for my own recipes, but I struggled to find a dedicated solution online. While there are countless LaTeX templates for academic papers, CVs, and presentations, I found a surprising lack of high-quality, aesthetic templates specifically designed for cookbooks. Frustrated by this gap, I decided to build one from scratch. My goal was to combine the typographic power of LaTeX with a layout that feels approachable and appetizing. This template is designed to be flexible and easy to use, allowing you to focus on your culinary creations while the code handles the formatting.
+\\[0.5cm]
+Whether you are preserving family traditions or drafting a professional collection, I hope this template serves as the perfect ingredient for your book.
+Happy TeXing and Cooking!
+\clearpage
+
+
 % --- Chapter: Appetizers ---
 % \setChapterImage{example-image-c}
 \chapterBg{Appetizers}{example-image-c}
+
+% Section example
+\sectionBg{Cold Appetizers}{example-image-a}
 
 \recipeOnePage{Bruschetta Classica}
     {Serves 4 | 15 min}
@@ -39,7 +57,41 @@
     }
     {For an extra kick, rub the toasted bread with a cut chili pepper alongside the garlic.}
     {example-image}
+
 \setBackground{example-image-b}
+
+\sectionBg{Hot Appetizers}{example-image-b}
+
+\recipeOnePage{Mozzarella in Carrozza}
+    {Serves 4 | 20 min}
+    {
+        \item 8 Slices of white sandwich bread
+        \item 200g Mozzarella cheese
+        \item 2 Large eggs
+        \item 1/2 cup Milk
+        \item Flour (for dredging)
+        \item Breadcrumbs (optional)
+        \item Vegetable oil (for frying)
+        \item Salt and Pepper
+    }
+    {A classic Italian fried sandwich, famous in Naples and Venice. Crispy, golden bread encasing warm, melty mozzarella.}
+    {
+        \item Trim the crusts from the bread slices.
+        \item Cut the mozzarella into slices that fit within the bread squares.
+        \item Place the mozzarella between two slices of bread to form sandwiches. Press the edges gently to seal.
+        \item Prepare three bowls: one with flour, one with beaten eggs mixed with milk and a pinch of salt, and one with breadcrumbs (if using).
+        \item Dredge each sandwich in flour, shaking off excess.
+        \item Dip into the egg mixture, ensuring the edges are well coated to prevent cheese from leaking.
+        \item (Optional) Coat with breadcrumbs for extra crunch.
+        \item Heat oil in a pan and fry the sandwiches until golden brown on both sides.
+        \item Drain on paper towels and serve hot.
+    }
+    {For a Venetian twist, add a file of anchovy or a slice of ham inside is traditional and delicious.}
+    {example-image-b}
+\setBackground{example-image-c}
+
+
+
 
 % --- Chapter: Secondi ---
 \chapterBg{Main Courses}{example-image-b}
@@ -111,6 +163,6 @@
         \item Serve immediately with a spoon.
     }
     {}
-    {example-image-a}
+    {example-image}
 
 \end{document}

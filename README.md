@@ -5,7 +5,7 @@ A custom LaTeX class for creating beautiful, visual-rich cookbooks. This class i
 ## features
 
 - **Custom Geometry**: Optimized margins for recipe layouts.
-- **Beautiful Typography**: Uses Palatino (serif) for body text and Helvetica (sans-serif) for headers.
+- **Beautiful Typography**: 
 - **Visuals**: Native support for full-page backgrounds and recipe images.
 - **Icons**: Integrated FontAwesome 5 icons for visual cues (Time, Ingredients, Preparation).
 - **Multilingual Ready**: Currently set to **English**, but supports easy switching (e.g., to Italian).
@@ -15,6 +15,7 @@ A custom LaTeX class for creating beautiful, visual-rich cookbooks. This class i
 1.  Ensure your `.tex` file starts with `\documentclass{cookbook}`.
 2.  Place your recipe images in the same directory or a subfolder (e.g., `photos/`) specifing it.
 3.  Use the provided commands to structure your book and add recipes.
+4.  Compile your document using `pdflatex`.
 
 ## Command Reference
 
@@ -43,12 +44,12 @@ A balanced layout with ingredients and image on the top half, and preparation st
         \item Ingredient 1
         \item Ingredient 2
     }
-    {Short description of the dish.}
+    {Short description of the dish. This is optional.}
     {
         \item Step 1 of preparation.
         \item Step 2...
     }
-    {Optional Chef's Tip}
+    {Optional Chef's Tip. This is optional.}
     {image_filename}
 ```
 
@@ -61,11 +62,11 @@ Ideal for simple recipes or when no photo is available. It uses a clean, two-col
     {
         \item Ingredient 1...
     }
-    {Description}
+    {Optional description}
     {
         \item Preparation steps...
     }
-    {Chef's Tip}
+    {Optional Chef's Tip}
 ```
 
 #### 3. `\recipeBottomImage`
@@ -75,9 +76,9 @@ Places the text at the top and a large, wide cropped image at the bottom of the 
 \recipeBottomImage{Recipe Title}
     {Servings | Time}
     {Ingredients...}
-    {Description}
+    {Optional description}
     {Preparation...}
-    {Chef's Tip}
+    {Optional Chef's Tip}
     {image_filename}
 ```
 
@@ -104,3 +105,8 @@ The class defines three main colors you can customize in `cookbook.cls`:
 - `TitleColor`: Dark Brown (RGB 100, 50, 0)
 - `SectionColor`: Medium Brown (RGB 80, 40, 0)
 - `TextColor`: Black (RGB 0, 0, 0)
+
+## Fonts used
+I select these fonts, but they can be easily changed in the `cookbook.cls` file.
+- Palatino (serif) for body text 
+- Helvetica (sans-serif) for headers.
