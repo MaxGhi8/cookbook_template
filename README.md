@@ -2,6 +2,8 @@
 
 A custom LaTeX class for creating beautiful, visual-rich cookbooks. This class is designed to be easy to use while producing professional-looking PDF outputs with full-page background images, recipe layouts, and elegant typography.
 
+🚀 Want to jump right in? [Open this project in Overleaf](https://www.overleaf.com/docs?snip_uri=https://github.com/MaxGhi8/cookbook_template/archive/refs/heads/main.zip) and start creating your cookbook in seconds!
+
 ## features
 
 - **Custom Geometry**: Optimized margins for recipe layouts.
